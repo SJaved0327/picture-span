@@ -1,4 +1,9 @@
+//========== IMPORT ==========//
+
+// React
 import React from "react";
+
+//========== COMPONENT ==========//
 
 const Jumbotron = () => (
   <div className="jumbotron text-center ">
@@ -8,5 +13,7 @@ const Jumbotron = () => (
     </p>
   </div>
 );
+
+//========== EXPORT ==========//
 
 export default Jumbotron;
