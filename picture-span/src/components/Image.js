@@ -14,6 +14,11 @@ const styles = {
   	borderStyle: "solid",
     borderWidth: "1px",
     borderColor: "#D3D3D3"
+  },
+  button: {
+    padding: "5px",
+    height: "200px",
+    width: "200px"
   }
 };
 
@@ -25,10 +30,12 @@ const styles = {
 
 //========== COMPONENT ==========//
 
-class App extends React.Component {
-  <div>
-    IMAGE
-  </div>
+class Image extends React.Component {
+  render = () => (
+    <div>
+        <img inpu type="button" src='https://www.what-dog.net/Images/faces2/scroll001.jpg' alt='doggy' style={styles.button}/>
+    </div>
+  );
 };
 
 //========== EXPORT ==========//

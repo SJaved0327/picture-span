@@ -2,6 +2,9 @@
 
 import React from "react";
 
+//Image
+import Image from "./Image";
+
 //========== STYLES ==========//
 
 const styles = {
@@ -20,8 +23,14 @@ const styles = {
 //========== COMPONENT ==========//
 
 const ImagePanel = () => (
+
+	// ChangeStatus = (event) => {
+
+
+	// }
+
   <div>
-    Image
+    <Image />
   </div>
 );
 
