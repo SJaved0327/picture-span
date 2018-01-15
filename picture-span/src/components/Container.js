@@ -23,16 +23,11 @@ class Container extends React.Component {
     clicked: []
   };
 
-  imageList = [
-    'https://thumbs.dreamstime.com/b/happy-smiling-boston-terrier-puppy-cute-seven-week-old-mouth-open-54647834.jpg',
-    {src: "https://www.purina.com/sites/g/files/auxxlc196/files/NonSporting_Boston-Terrier.jpg"},
-    {src: "http://www.petguide.com/wp-content/uploads/2016/08/froston.jpg"}
-  ];
   //handleButtonClick
   handleButtonClick = event => {
     
     //get the data-number value of the clicked button
-    const current = event.target.attributes.getNamedItem("data-number").value;
+    const current = event.target.attributes.getNamedItem("data-value").value;
     //make copy of current state to modify
     const newState = { ...this.state };
     //match

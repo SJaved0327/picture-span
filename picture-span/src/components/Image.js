@@ -8,19 +8,18 @@ import React from "react";
 
 //========== COMPONENT ==========//
 
-const Image = props => {
+const Image = props => (
 
   <div>
     <img 
       input type="button" 
       src={props.src}
-      style={styles.button}
-      data-number={props.number}
+      data-value={props.dataValue}
       onClick={props.handleButtonClick}
     />
   </div>
 
-};
+);
 
 //========== EXPORT ==========//
 

@@ -18,7 +18,7 @@ class App extends React.Component {
 
 	//render
 	render = () => (
-		<div className="container-fluid">
+		<div>
 		  <Navbar />
 		  <Jumbotron />
 		  <Container />

@@ -13,30 +13,45 @@ import Image from "./Image";
 
 //========== COMPONENT ==========//
 
-const ImagePanel = props => {
-    <div>
-      <Image
-      src={imageList[0]}
-      handleButtonClick={props.handleButtonClick}
-      />
-      <Image
-      src={imageList[1]}
-      handleButtonClick={props.handleButtonClick}
-      />
-      <Image
-      src={imageList[2]}
-      handleButtonClick={props.handleButtonClick}
-      />
-      <Image
-      src={imageList[3]}
-      handleButtonClick={props.handleButtonClick}
-      />
-      <Image
-      src={imageList[4]}
-      handleButtonClick={props.handleButtonClick}
-      />
-    </div>
-};
+//list of image sources
+const srcList = [
+  'https://thumbs.dreamstime.com/b/happy-smiling-boston-terrier-puppy-cute-seven-week-old-mouth-open-54647834.jpg',
+  'https://www.purina.com/sites/g/files/auxxlc196/files/NonSporting_Boston-Terrier.jpg',
+  'http://www.petguide.com/wp-content/uploads/2016/08/froston.jpg',
+  'http://www.petguide.com/wp-content/uploads/2016/08/froston.jpg',
+  'http://www.petguide.com/wp-content/uploads/2016/08/froston.jpg'
+];
+
+
+const ImagePanel = props => (
+  <div>
+    <Image
+    src={srcList[0]}
+    data-value='0'
+    handleButtonClick={props.handleButtonClick}
+    />
+    <Image
+    src={srcList[1]}
+    data-value='1'
+    handleButtonClick={props.handleButtonClick}
+    />
+    <Image
+    src={srcList[2]}
+    data-value='2'
+    handleButtonClick={props.handleButtonClick}
+    />
+    <Image
+    src={srcList[3]}
+    data-value='3'
+    handleButtonClick={props.handleButtonClick}
+    />
+    <Image
+    src={srcList[4]}
+    data-value='4'
+    handleButtonClick={props.handleButtonClick}
+    />
+  </div>
+);
 
 //========== EXPORT ==========//
 
