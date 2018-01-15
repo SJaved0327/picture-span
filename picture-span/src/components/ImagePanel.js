@@ -1,47 +1,42 @@
-//========== REACT ==========//
+//========== IMPORT ==========//
+
+// React
 
 import React from "react";
 
-//Image
+// Components
+
 import Image from "./Image";
 
 //========== STYLES ==========//
 
-const styles = {
-  panel: {
-    borderStyle: "solid",
-    borderWidth: "1px",
-    borderColor: "#D3D3D3"
-  },
-  image: {
-  	borderStyle: "solid",
-    borderWidth: "1px",
-    borderColor: "#D3D3D3"
-  }
-};
 
 //========== COMPONENT ==========//
 
-const ImagePanel = () => (
-
-	// ChangeStatus = (event) => {
-
-
-//== function ==//
-renderImages(){
-  
-
-
-
-}
-
-	// }
-
-render = () =>(
-  <div>
-    {this.renderImages()}
-  </div>
-);
+const ImagePanel = props => {
+    <div>
+      <Image
+      src={imageList[0]}
+      handleButtonClick={props.handleButtonClick}
+      />
+      <Image
+      src={imageList[1]}
+      handleButtonClick={props.handleButtonClick}
+      />
+      <Image
+      src={imageList[2]}
+      handleButtonClick={props.handleButtonClick}
+      />
+      <Image
+      src={imageList[3]}
+      handleButtonClick={props.handleButtonClick}
+      />
+      <Image
+      src={imageList[4]}
+      handleButtonClick={props.handleButtonClick}
+      />
+    </div>
+};
 
 //========== EXPORT ==========//
 
