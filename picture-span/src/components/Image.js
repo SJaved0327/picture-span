@@ -1,41 +1,26 @@
-//========== REACT ==========//
+//========== IMPORT ==========//
 
 import React from "react";
 
 //========== STYLES ==========//
 
 const styles = {
-  panel: {
-    borderStyle: "solid",
-    borderWidth: "1px",
-    borderColor: "#D3D3D3"
-  },
-  image: {
-  	borderStyle: "solid",
-    borderWidth: "1px",
-    borderColor: "#D3D3D3"
-  },
-  button: {
-    padding: "5px",
-    height: "200px",
-    width: "200px"
+  button {
+    color: white
   }
 };
 
-//========== HELPER FUNCTION ==========//
-
-
-
-// https://www.what-dog.net/Images/faces2/scroll001.jpg
-
 //========== COMPONENT ==========//
 
-class Image extends React.Component {
-  render = () => (
-    <div>
-        <img inpu type="button" src='https://www.what-dog.net/Images/faces2/scroll001.jpg' alt='doggy' style={styles.button}/>
-    </div>
-  );
+const Image = props =>
+  <div>
+      <img 
+        input type="button" 
+        src={props.src}
+        style={styles.button}
+        data-active={props.active}
+      />
+  </div>
 };
 
 //========== EXPORT ==========//

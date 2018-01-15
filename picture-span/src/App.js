@@ -16,6 +16,20 @@ import Container from "./components/Container";
 
 class App extends React.Component {
 
+	this.state = {
+			images: {
+				image1 {
+					url: "https://www.what-dog.net/Images/faces2/scroll001.jpg",
+					clicked: false
+				},
+				image1 {
+					url: "blah",
+					clicked: true
+				}
+			}
+		};
+
+
 	// constructor(){
 	// 	//allows method to refer back to component as this
 	// 	super();
@@ -33,7 +47,7 @@ class App extends React.Component {
 	// // clickImage = (image) => {
 	// // 	//make copy of current state and spread it into new object
 	// // 	const images = {...this.state.images};
-		
+
 	// // 	const timestamp = Date.now();
 
 

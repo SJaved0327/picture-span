@@ -27,10 +27,19 @@ const ImagePanel = () => (
 	// ChangeStatus = (event) => {
 
 
+//== function ==//
+renderImages(){
+  
+
+
+
+}
+
 	// }
 
+render = () =>(
   <div>
-    <Image />
+    {this.renderImages()}
   </div>
 );
 
